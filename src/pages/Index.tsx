@@ -2,7 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Categories } from "@/components/Categories";
 import { GiftFilter } from "@/components/GiftFilter";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Newsletter } from "@/components/Newsletter";
+import { ShareApp } from "@/components/ShareApp";
 
 const Index = () => {
   return (
@@ -18,7 +18,7 @@ const Index = () => {
         </div>
       </div>
       <HowItWorks />
-      <Newsletter />
+      <ShareApp />
     </div>
   );
 };
