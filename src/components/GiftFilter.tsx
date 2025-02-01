@@ -66,6 +66,27 @@ export const GiftFilter = () => {
 
       <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl shadow-xl overflow-hidden animate-fade-in">
         <form onSubmit={handleSubmit} className="p-6 space-y-8">
+           {/* 특별 이벤트 드롭다운 추가 */}
+          <div className="space-y-2">
+            <label className="block text-lg font-medium text-gray-800">
+              특별한 날을 위한 선물인가요? (선택사항)
+            </label>
+            <Select value={specialEvent} onValueChange={setSpecialEvent}>
+              <SelectTrigger className="w-full h-14 text-lg">
+                <SelectValue placeholder="선택해주세요 (선택사항)" />
+              </SelectTrigger>
+              <SelectContent className="bg-white max-h-[300px]" position="popper" sideOffset={5}>
+                <SelectItem value="" className="hover:bg-pink-50 cursor-pointer py-3 italic text-gray-500">선택하지 않음</SelectItem>
+                <SelectItem value="valentine" className="hover:bg-pink-50 cursor-pointer py-3">발렌타인데이 (2월 14일)</SelectItem>
+                <SelectItem value="white" className="hover:bg-pink-50 cursor-pointer py-3">화이트데이 (3월 14일)</SelectItem>
+                <SelectItem value="parents" className="hover:bg-pink-50 cursor-pointer py-3">어버이날 (5월 8일)</SelectItem>
+                <SelectItem value="teacher" className="hover:bg-pink-50 cursor-pointer py-3">스승의날 (5월 15일)</SelectItem>
+                <SelectItem value="christmas" className="hover:bg-pink-50 cursor-pointer py-3">크리스마스 (12월 25일)</SelectItem>
+                <SelectItem value="birthday" className="hover:bg-pink-50 cursor-pointer py-3">생일</SelectItem>
+                <SelectItem value="anniversary" className="hover:bg-pink-50 cursor-pointer py-3">기념일</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
           <div className="space-y-2">
             <label className="block text-lg font-medium text-gray-800">
               예산을 선택하세요
