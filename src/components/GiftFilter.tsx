@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Gift } from "@/types/gift";
 import { gifts, filterGifts } from "@/data/gifts";
 import { GiftResults } from "@/components/GiftResults";
+import { useNavigate } from "react-router-dom";
 
 export const GiftFilter = () => {
+  const navigate = useNavigate();
   const [filters, setFilters] = useState({
     price: "",
     category: "",
@@ -14,9 +16,6 @@ export const GiftFilter = () => {
     relation: "",
     season: "",
   });
-
-  const [filteredGifts, setFilteredGifts] = useState<Gift[]>([]);
-  const [hasSearched, setHasSearched] = useState(false);
 
   const handleFilterChange = (value: string, filterType: keyof typeof filters) => {
     setFilters((prev) => ({
@@ -35,8 +34,8 @@ export const GiftFilter = () => {
       relation: filters.relation,
       season: filters.season,
     });
-    setFilteredGifts(results);
-    setHasSearched(true);
+    
+    navigate("/gift-results", { state: { gifts: results } });
   };
 
   return (
@@ -167,11 +166,6 @@ export const GiftFilter = () => {
         </Button>
       </form>
       
-      {hasSearched && (
-        <div className="mt-8">
-          <GiftResults gifts={filteredGifts} />
-        </div>
-      )}
     </div>
   );
 };
