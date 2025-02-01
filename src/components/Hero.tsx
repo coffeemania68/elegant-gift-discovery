@@ -11,13 +11,13 @@ export const Hero = () => {
       </div>
       <div className="relative h-[300px] w-full overflow-hidden">
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/video/spring.mp4"
-        />
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover"
+  src="/video/winter.mp4"  // 이 부분만 수정
+/>
       </div>
     </div>
   );
