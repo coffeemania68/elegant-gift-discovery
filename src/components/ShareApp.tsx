@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Share2 } from "lucide-react";
 
 export const ShareApp = () => {
-  const githubUrl = "https://github.com/your-username/gift-finder";
+  const githubUrl = "https://preview--elegant-gift-discovery.lovable.app/";
 
   const handleShare = async () => {
     if (navigator.share) {
