@@ -127,7 +127,7 @@ export default function GiftResults() {
                   className="block"
                 >
                   <Button className="w-full">
-                    쿠팡에서 구매하기
+                    선물 후기 보러가기
                   </Button>
                 </a>
               </CardContent>
