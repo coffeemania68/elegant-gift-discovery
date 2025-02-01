@@ -55,25 +55,25 @@ export const Categories = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 font-['Inter']">
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="text-3xl font-bold text-center mb-8">
         인기 카테고리
       </h2>
-      <div className="grid grid-cols-1 gap-3">
+      <div className="grid grid-cols-1 gap-4">
         {categories.map((category, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer overflow-hidden animate-fade-up h-[56px]"
+            className="relative bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer overflow-hidden animate-fade-up"
             style={{ animationDelay: `${index * 100}ms` }}
             onClick={() => handleCategoryClick(category.defaultFilters)}
           >
             <div className="flex items-center p-3 gap-4">
               <div className="flex-1">
-                <h3 className="text-lg font-semibold mb-1 font-['Inter']">{category.title}</h3>
+                <h3 className="text-lg font-bold mb-1">{category.title}</h3>
                 <p className="text-gray-600 text-sm">{category.description}</p>
               </div>
-              <div className="w-16 h-16 flex-shrink-0">
-                <img 
+              <div className="w-20 h-20 flex-shrink-0">
+               <img 
                   src={category.image} 
                   alt={category.title}
                   className="w-full h-full object-cover rounded-lg transform -rotate-12"
