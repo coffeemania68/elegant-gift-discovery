@@ -1,7 +1,16 @@
 import giftsData from './gifts.json';
 import { Gift } from "@/types/gift";
 
-export const gifts: Gift[] = giftsData.gifts;
+// Type assertion to ensure the imported data matches our Gift type
+export const gifts: Gift[] = giftsData.gifts.map(gift => ({
+  ...gift,
+  category: gift.category as Gift['category'],
+  priceRange: gift.priceRange as Gift['priceRange'],
+  gender: gift.gender as Gift['gender'],
+  ageGroups: gift.ageGroups as Gift['ageGroups'],
+  relations: gift.relations as Gift['relations'],
+  seasons: gift.seasons as Gift['seasons']
+}));
 
 export const filterGifts = (filters: {
   priceRange?: string;
@@ -13,8 +22,12 @@ export const filterGifts = (filters: {
 }): Gift[] => {
   return gifts.filter(gift => {
     // 모든 필터가 'all'이거나 비어있으면 true 반환
-    if (!filters.priceRange && !filters.category && !filters.gender && 
-        !filters.age && !filters.relation && !filters.season) {
+    if ((!filters.priceRange || filters.priceRange === 'all') && 
+        (!filters.category || filters.category === 'all') && 
+        (!filters.gender || filters.gender === 'all') && 
+        (!filters.age || filters.age === 'all') && 
+        (!filters.relation || filters.relation === 'all') && 
+        (!filters.season || filters.season === 'all')) {
       return true;
     }
 
