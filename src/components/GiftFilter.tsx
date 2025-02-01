@@ -50,7 +50,8 @@ export const GiftFilter = () => {
       } 
     });
   };
-
+  const [specialEvent, setSpecialEvent] = useState(""); // 새로운 상태 추가
+  
   return (
     <>
       <div className="relative h-[400px] w-full overflow-hidden mb-8">
