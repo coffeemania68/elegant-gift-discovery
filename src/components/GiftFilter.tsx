@@ -1,21 +1,48 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Gift } from "@/types/gift";
 import { gifts, filterGifts } from "@/data/gifts";
 import { GiftResults } from "@/components/GiftResults";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const seasonVideos = {
+  spring: "/videos/spring.mp4",
+  summer: "/videos/summer.mp4",
+  fall: "/videos/fall.mp4",
+  winter: "/videos/winter.mp4"
+};
 
 export const GiftFilter = () => {
   const navigate = useNavigate();
-  const [filters, setFilters] = useState({
-    price: "",
-    category: "",
-    gender: "",
-    age: "",
-    relation: "",
-    season: "",
+  const location = useLocation();
+  const [filters, setFilters] = useState(() => {
+    const savedFilters = sessionStorage.getItem('giftFilters');
+    if (savedFilters) {
+      return JSON.parse(savedFilters);
+    }
+    return {
+      price: "",
+      category: "",
+      gender: "",
+      age: "",
+      relation: "",
+      season: "",
+    };
   });
+
+  useEffect(() => {
+    if (location.state?.defaultFilters) {
+      setFilters(prev => ({
+        ...prev,
+        ...location.state.defaultFilters
+      }));
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    sessionStorage.setItem('giftFilters', JSON.stringify(filters));
+  }, [filters]);
 
   const handleFilterChange = (value: string, filterType: keyof typeof filters) => {
     setFilters((prev) => ({
@@ -38,9 +65,33 @@ export const GiftFilter = () => {
     navigate("/gift-results", { state: { gifts: results } });
   };
 
+  const getCurrentSeasonVideo = () => {
+    switch(filters.season) {
+      case 'p': return seasonVideos.spring;
+      case 'u': return seasonVideos.summer;
+      case 'f': return seasonVideos.fall;
+      case 'w': return seasonVideos.winter;
+      default: return seasonVideos.spring;
+    }
+  };
+
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-in">
-      <div className="h-2 bg-gradient-to-r from-primary to-blue-500" />
+      <div className="relative h-64 overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          src={getCurrentSeasonVideo()}
+        />
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <h3 className="text-3xl font-bold text-white text-center">
+            맞춤형 선물 찾기
+          </h3>
+        </div>
+      </div>
       
       <form onSubmit={handleSubmit} className="p-8 space-y-8">
         {/* 예산 선택 */}
@@ -48,7 +99,7 @@ export const GiftFilter = () => {
           <label className="block text-lg font-medium text-gray-800">
             예산을 선택하세요
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "price")}>
+          <Select value={filters.price} onValueChange={(value) => handleFilterChange(value, "price")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
@@ -68,9 +119,9 @@ export const GiftFilter = () => {
         {/* 카테고리 선택 */}
         <div className="space-y-3">
           <label className="block text-lg font-medium text-gray-800">
-            어떤 종류의 선물을 찾으시나요?
+            카테고리
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "category")}>
+          <Select value={filters.category} onValueChange={(value) => handleFilterChange(value, "category")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
@@ -89,7 +140,7 @@ export const GiftFilter = () => {
           <label className="block text-lg font-medium text-gray-800">
             성별을 선택하세요
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "gender")}>
+          <Select value={filters.gender} onValueChange={(value) => handleFilterChange(value, "gender")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
@@ -106,7 +157,7 @@ export const GiftFilter = () => {
           <label className="block text-lg font-medium text-gray-800">
             연령대를 선택하세요
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "age")}>
+          <Select value={filters.age} onValueChange={(value) => handleFilterChange(value, "age")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
@@ -127,7 +178,7 @@ export const GiftFilter = () => {
           <label className="block text-lg font-medium text-gray-800">
             어떤 관계인가요?
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "relation")}>
+          <Select value={filters.relation} onValueChange={(value) => handleFilterChange(value, "relation")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
@@ -148,7 +199,7 @@ export const GiftFilter = () => {
           <label className="block text-lg font-medium text-gray-800">
             어느 계절에 선물하나요?
           </label>
-          <Select onValueChange={(value) => handleFilterChange(value, "season")}>
+          <Select value={filters.season} onValueChange={(value) => handleFilterChange(value, "season")}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
