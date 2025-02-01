@@ -4,14 +4,6 @@ import { Button } from "./ui/button";
 export const Hero = () => {
   return (
     <div className="container mx-auto px-4 py-24 text-center animate-fade-up">
-      <div className="relative w-32 h-32 mx-auto mb-8">
-        <div className="absolute inset-0 bg-primary/10 rounded-full animate-pulse"></div>
-        <img 
-          src="/placeholder.svg" 
-          alt="Gift Finder" 
-          className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
-        />
-      </div>
       <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
         선물 추천
       </h1>

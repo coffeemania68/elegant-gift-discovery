@@ -17,6 +17,11 @@ const steps = [
 ];
 
 export const HowItWorks = () => {
+  const scrollToGiftFilter = () => {
+    const giftFilterSection = document.querySelector('#gift-filter');
+    giftFilterSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="container mx-auto px-4 py-16 bg-white/50 rounded-3xl my-16">
       <h2 className="text-3xl font-bold text-center mb-12 gradient-text">
@@ -26,10 +31,11 @@ export const HowItWorks = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="text-center animate-fade-up"
+            onClick={scrollToGiftFilter}
+            className="text-center animate-fade-up bg-gradient-to-br from-[#FFDEE2] to-[#FEC6A1] p-6 rounded-2xl cursor-pointer hover:shadow-lg transition-all"
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            <div className="text-4xl font-bold text-primary/20 mb-4">{step.number}</div>
+            <div className="text-4xl font-bold text-[#8B5CF6]/20 mb-4">{step.number}</div>
             <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
             <p className="text-gray-600">{step.description}</p>
           </div>
