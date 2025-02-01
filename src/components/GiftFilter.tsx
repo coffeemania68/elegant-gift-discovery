@@ -50,25 +50,25 @@ export const GiftFilter = () => {
       } 
     });
   };
-  const [specialEvent, setSpecialEvent] = useState(""); // 새로운 상태 추가
+  const [specialEvent, setSpecialEvent] = useState("none"); // 새로운 상태 추가
   
   return (
     <>
-      <div className="relative h-[400px] w-full overflow-hidden mb-8">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/video/winter.mp4"
-        />
-      </div>
+ <div className="relative h-[400px] w-full overflow-hidden mb-8">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+    src="/video/your-video.mp4"
+  />
+</div>
 
       <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl shadow-xl overflow-hidden animate-fade-in">
         <form onSubmit={handleSubmit} className="p-6 space-y-8">
            {/* 특별 이벤트 드롭다운 추가 */}
-          <div className="space-y-2">
+         <div className="space-y-2">
             <label className="block text-lg font-medium text-gray-800">
               특별한 날을 위한 선물인가요? (선택사항)
             </label>
@@ -77,7 +77,7 @@ export const GiftFilter = () => {
                 <SelectValue placeholder="선택해주세요 (선택사항)" />
               </SelectTrigger>
               <SelectContent className="bg-white max-h-[300px]" position="popper" sideOffset={5}>
-                <SelectItem value="" className="hover:bg-pink-50 cursor-pointer py-3 italic text-gray-500">선택하지 않음</SelectItem>
+                <SelectItem value="none" className="hover:bg-pink-50 cursor-pointer py-3 italic text-gray-500">선택하지 않음</SelectItem>
                 <SelectItem value="valentine" className="hover:bg-pink-50 cursor-pointer py-3">발렌타인데이 (2월 14일)</SelectItem>
                 <SelectItem value="white" className="hover:bg-pink-50 cursor-pointer py-3">화이트데이 (3월 14일)</SelectItem>
                 <SelectItem value="parents" className="hover:bg-pink-50 cursor-pointer py-3">어버이날 (5월 8일)</SelectItem>
@@ -88,6 +88,7 @@ export const GiftFilter = () => {
               </SelectContent>
             </Select>
           </div>
+          
           <div className="space-y-2">
             <label className="block text-lg font-medium text-gray-800">
               예산을 선택하세요
