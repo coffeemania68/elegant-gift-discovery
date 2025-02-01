@@ -1,6 +1,9 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Gift } from "@/types/gift";
+import { gifts, filterGifts } from "@/data/gifts";
+import { GiftResults } from "@/components/GiftResults";
 
 export const GiftFilter = () => {
   const [filters, setFilters] = useState({
@@ -12,6 +15,9 @@ export const GiftFilter = () => {
     season: "",
   });
 
+  const [filteredGifts, setFilteredGifts] = useState<Gift[]>([]);
+  const [hasSearched, setHasSearched] = useState(false);
+
   const handleFilterChange = (value: string, filterType: keyof typeof filters) => {
     setFilters((prev) => ({
       ...prev,
@@ -21,8 +27,16 @@ export const GiftFilter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("선택된 필터:", filters);
-    // TODO: 필터 결과 처리 로직
+    const results = filterGifts({
+      priceRange: filters.price,
+      category: filters.category,
+      gender: filters.gender,
+      age: filters.age,
+      relation: filters.relation,
+      season: filters.season,
+    });
+    setFilteredGifts(results);
+    setHasSearched(true);
   };
 
   return (
@@ -152,6 +166,12 @@ export const GiftFilter = () => {
           나에게 딱 맞는 선물 찾기
         </Button>
       </form>
+      
+      {hasSearched && (
+        <div className="mt-8">
+          <GiftResults gifts={filteredGifts} />
+        </div>
+      )}
     </div>
   );
 };
