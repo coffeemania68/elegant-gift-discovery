@@ -2,7 +2,8 @@ import { Button } from "./ui/button";
 import { Share2 } from "lucide-react";
 
 export const ShareApp = () => {
-  const githubUrl = "https://preview--elegant-gift-discovery.lovable.app/";
+  // 현재 페이지의 URL을 사용
+  const currentUrl = window.location.href;
 
   const handleShare = async () => {
     if (navigator.share) {
@@ -10,13 +11,17 @@ export const ShareApp = () => {
         await navigator.share({
           title: 'Gift Finder',
           text: '맞춤형 선물 추천 서비스',
-          url: window.location.href,
+          url: currentUrl,  // 현재 페이지 URL 사용
         });
       } catch (error) {
-        window.open(githubUrl, '_blank');
+        // 공유 실패시 URL 복사
+        navigator.clipboard.writeText(currentUrl);
+        alert('URL이 복사되었습니다!');
       }
     } else {
-      window.open(githubUrl, '_blank');
+      // 공유 API를 지원하지 않는 경우 URL 복사
+      navigator.clipboard.writeText(currentUrl);
+      alert('URL이 복사되었습니다!');
     }
   };
 
