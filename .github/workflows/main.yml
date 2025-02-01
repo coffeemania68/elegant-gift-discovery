@@ -1,0 +1,7 @@
+name: Empty Workflow
+on: [push]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is an empty workflow"
