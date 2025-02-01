@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 const categories = [
   {
-    image: "/images/categories/novel.jpg",
-    title: "도슨트북",
-    description: "스토리 요약부터 해설까지, 도슨트와 함께 읽는",
+    image: "/images/categories/birthday.jpg",
+    title: "생일 선물",
+    description: "특별한 날을 위한 완벽한 선물",
     defaultFilters: {
       category: "all",
       relation: "f",
@@ -12,9 +12,9 @@ const categories = [
     }
   },
   {
-    image: "/images/categories/essay.jpg",
-    title: "오브제북",
-    description: "활자를 넘어 아름다운 그림과 음악을 함께 감상하는",
+    image: "/images/categories/anniversary.jpg",
+    title: "기념일",
+    description: "사랑하는 마음을 전하는 선물",
     defaultFilters: {
       category: "all",
       relation: "s",
@@ -22,9 +22,9 @@ const categories = [
     }
   },
   {
-    image: "/images/categories/business.jpg",
-    title: "오디오북",
-    description: "소설, 인문, 경제경영, 자기계발, 에세이, 과학",
+    image: "/images/categories/special.jpg",
+    title: "특별한 날",
+    description: "잊지 못할 순간을 만드는 선물",
     defaultFilters: {
       category: "all",
       relation: "all",
@@ -32,9 +32,9 @@ const categories = [
     }
   },
   {
-    image: "/images/categories/self-help.jpg",
-    title: "챗북",
-    description: "백발백중! 벼락치기 운세, 쇼트 클래식, 인터뷰 시리즈",
+    image: "/images/categories/congratulation.jpg",
+    title: "축하",
+    description: "기쁨을 더하는 축하 선물",
     defaultFilters: {
       category: "all",
       relation: "r",
@@ -53,7 +53,7 @@ export const Categories = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12">
-        카테고리
+        인기 카테고리
       </h2>
       <div className="grid grid-cols-1 gap-4">
         {categories.map((category, index) => (
@@ -63,16 +63,16 @@ export const Categories = () => {
             style={{ animationDelay: `${index * 100}ms` }}
             onClick={() => handleCategoryClick(category.defaultFilters)}
           >
-            <div className="flex items-center p-6 gap-6">
+            <div className="flex items-center p-4 gap-6">
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-2">{category.title}</h3>
                 <p className="text-gray-600">{category.description}</p>
               </div>
-              <div className="w-32 h-32 flex-shrink-0">
+              <div className="w-24 h-24 flex-shrink-0">
                 <img 
                   src={category.image} 
                   alt={category.title}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg transform -rotate-12"
                 />
               </div>
             </div>
