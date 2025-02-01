@@ -1,17 +1,7 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Gift } from "@/types/gift";
-import { gifts, filterGifts } from "@/data/gifts";
-import { GiftResults } from "@/components/GiftResults";
 import { useNavigate, useLocation } from "react-router-dom";
-
-const seasonVideos = {
-  spring: "/videos/spring.mp4",
-  summer: "/videos/summer.mp4",
-  fall: "/videos/fall.mp4",
-  winter: "/videos/winter.mp4"
-};
 
 export const GiftFilter = () => {
   const navigate = useNavigate();
@@ -53,54 +43,23 @@ export const GiftFilter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const results = filterGifts({
-      priceRange: filters.price,
-      category: filters.category,
-      gender: filters.gender,
-      age: filters.age,
-      relation: filters.relation,
-      season: filters.season,
+    navigate("/gift-results", { 
+      state: { 
+        filters: filters 
+      } 
     });
-    
-    navigate("/gift-results", { state: { gifts: results } });
-  };
-
-  const getCurrentSeasonVideo = () => {
-    switch(filters.season) {
-      case 'p': return seasonVideos.spring;
-      case 'u': return seasonVideos.summer;
-      case 'f': return seasonVideos.fall;
-      case 'w': return seasonVideos.winter;
-      default: return seasonVideos.spring;
-    }
   };
 
   return (
-    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden animate-fade-in">
-      <div className="relative h-48 overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          src={getCurrentSeasonVideo()}
-        />
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          <h3 className="text-2xl font-bold text-white text-center">
-            맞춤형 선물 찾기
-          </h3>
-        </div>
-      </div>
-      
-      <form onSubmit={handleSubmit} className="p-6 space-y-6 bg-white">
+    <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl shadow-xl overflow-hidden animate-fade-in">
+      <form onSubmit={handleSubmit} className="p-6 space-y-8">
         {/* 예산 선택 */}
         <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             예산을 선택하세요
           </label>
           <Select value={filters.price} onValueChange={(value) => handleFilterChange(value, "price")}>
-            <SelectTrigger className="w-full h-14 text-lg">
+            <SelectTrigger className="w-full h-16 text-lg bg-white">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent className="bg-white">
@@ -122,7 +81,7 @@ export const GiftFilter = () => {
             카테고리
           </label>
           <Select value={filters.category} onValueChange={(value) => handleFilterChange(value, "category")}>
-            <SelectTrigger className="w-full h-14 text-lg">
+            <SelectTrigger className="w-full h-16 text-lg bg-white">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent className="bg-white">
@@ -135,7 +94,6 @@ export const GiftFilter = () => {
           </Select>
         </div>
 
-        {/* 성별 선택 */}
         <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             성별을 선택하세요
