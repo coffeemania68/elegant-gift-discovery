@@ -76,8 +76,8 @@ export const GiftFilter = () => {
   };
 
   return (
-     <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-in">
-      <div className="relative h-64 overflow-hidden">
+    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden animate-fade-in">
+      <div className="relative h-48 overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
@@ -87,23 +87,23 @@ export const GiftFilter = () => {
           src={getCurrentSeasonVideo()}
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          <h3 className="text-3xl font-bold text-white text-center">
+          <h3 className="text-2xl font-bold text-white text-center">
             맞춤형 선물 찾기
           </h3>
         </div>
       </div>
       
-      <form onSubmit={handleSubmit} className="p-8 space-y-8">
+      <form onSubmit={handleSubmit} className="p-6 space-y-6 bg-white">
         {/* 예산 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             예산을 선택하세요
           </label>
           <Select value={filters.price} onValueChange={(value) => handleFilterChange(value, "price")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체 예산</SelectItem>
               <SelectItem value="1m">1만원대</SelectItem>
               <SelectItem value="3m">3만원대</SelectItem>
@@ -117,15 +117,15 @@ export const GiftFilter = () => {
         </div>
 
         {/* 카테고리 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             카테고리
           </label>
           <Select value={filters.category} onValueChange={(value) => handleFilterChange(value, "category")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체 카테고리</SelectItem>
               <SelectItem value="digital">디지털/가전</SelectItem>
               <SelectItem value="health">건강/운동</SelectItem>
@@ -136,15 +136,15 @@ export const GiftFilter = () => {
         </div>
 
         {/* 성별 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             성별을 선택하세요
           </label>
           <Select value={filters.gender} onValueChange={(value) => handleFilterChange(value, "gender")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체</SelectItem>
               <SelectItem value="m">남성</SelectItem>
               <SelectItem value="f">여성</SelectItem>
@@ -153,15 +153,15 @@ export const GiftFilter = () => {
         </div>
 
         {/* 연령대 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             연령대를 선택하세요
           </label>
           <Select value={filters.age} onValueChange={(value) => handleFilterChange(value, "age")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체 연령대</SelectItem>
               <SelectItem value="b">영아 (0-3세)</SelectItem>
               <SelectItem value="k">아동 (4-13세)</SelectItem>
@@ -174,15 +174,15 @@ export const GiftFilter = () => {
         </div>
 
         {/* 관계 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             어떤 관계인가요?
           </label>
           <Select value={filters.relation} onValueChange={(value) => handleFilterChange(value, "relation")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체 관계</SelectItem>
               <SelectItem value="f">가족</SelectItem>
               <SelectItem value="s">연인</SelectItem>
@@ -195,15 +195,15 @@ export const GiftFilter = () => {
         </div>
 
         {/* 계절 선택 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <label className="block text-lg font-medium text-gray-800">
             어느 계절에 선물하나요?
           </label>
           <Select value={filters.season} onValueChange={(value) => handleFilterChange(value, "season")}>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className="w-full h-14 text-lg">
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white">
               <SelectItem value="all">전체 계절</SelectItem>
               <SelectItem value="p">봄</SelectItem>
               <SelectItem value="u">여름</SelectItem>
