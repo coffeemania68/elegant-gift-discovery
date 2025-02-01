@@ -76,7 +76,7 @@ export const GiftFilter = () => {
   };
 
   return (
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-in">
+     <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-in">
       <div className="relative h-64 overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -86,6 +86,11 @@ export const GiftFilter = () => {
           playsInline
           src={getCurrentSeasonVideo()}
         />
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <h3 className="text-3xl font-bold text-white text-center">
+            맞춤형 선물 찾기
+          </h3>
+        </div>
       </div>
       
       <form onSubmit={handleSubmit} className="p-8 space-y-8">
