@@ -217,7 +217,7 @@ export const GiftFilter = () => {
           type="submit"
           className="w-full bg-gradient-to-r from-primary to-blue-500 text-white font-medium py-6 text-lg hover:shadow-lg transform transition hover:-translate-y-0.5"
         >
-          나에게 딱 맞는 선물 찾기
+          마음까지 전하는 선물 추천받기
         </Button>
       </form>
     </div>
