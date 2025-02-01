@@ -264,12 +264,24 @@ export const filterGifts = (filters: {
   season?: string;
 }): Gift[] => {
   return gifts.filter(gift => {
+    // 가격 범위 필터
     if (filters.priceRange && gift.priceRange !== filters.priceRange) return false;
-    if (filters.category && gift.category !== filters.category) return false;
-    if (filters.gender && gift.gender !== filters.gender && gift.gender !== "a") return false;
-    if (filters.age && !gift.ageGroups.includes(filters.age as any)) return false;
-    if (filters.relation && !gift.relations.includes(filters.relation as any)) return false;
-    if (filters.season && !gift.seasons.includes(filters.season as any) && !gift.seasons.includes("a")) return false;
+    
+    // 카테고리 필터
+    if (filters.category && filters.category !== 'all' && gift.category !== filters.category) return false;
+    
+    // 성별 필터 ('a'는 모든 성별)
+    if (filters.gender && gift.gender !== 'a' && gift.gender !== filters.gender) return false;
+    
+    // 연령대 필터
+    if (filters.age && !gift.ageGroups.includes(filters.age)) return false;
+    
+    // 관계 필터
+    if (filters.relation && !gift.relations.includes(filters.relation)) return false;
+    
+    // 계절 필터 ('a'는 모든 계절)
+    if (filters.season && filters.season !== 'all' && !gift.seasons.includes(filters.season) && !gift.seasons.includes('a')) return false;
+    
     return true;
   });
 };
