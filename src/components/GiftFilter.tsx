@@ -2,6 +2,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 
 export const GiftFilter = () => {
   const navigate = useNavigate();
@@ -59,8 +60,11 @@ export const GiftFilter = () => {
             예산을 선택하세요
           </label>
           <Select value={filters.price} onValueChange={(value) => handleFilterChange(value, "price")}>
-            <SelectTrigger className="w-full h-16 text-lg bg-white">
+            <SelectTrigger className="w-full h-16 text-lg bg-white pointer-events-none">
               <SelectValue placeholder="선택해주세요" />
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-auto">
+                <ChevronDown className="h-5 w-5" />
+              </div>
             </SelectTrigger>
             <SelectContent className="bg-white">
               <SelectItem value="all">전체 예산</SelectItem>
@@ -81,8 +85,11 @@ export const GiftFilter = () => {
             카테고리
           </label>
           <Select value={filters.category} onValueChange={(value) => handleFilterChange(value, "category")}>
-            <SelectTrigger className="w-full h-16 text-lg bg-white">
+            <SelectTrigger className="w-full h-16 text-lg bg-white pointer-events-none">
               <SelectValue placeholder="선택해주세요" />
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-auto">
+                <ChevronDown className="h-5 w-5" />
+              </div>
             </SelectTrigger>
             <SelectContent className="bg-white">
               <SelectItem value="all">전체 카테고리</SelectItem>
@@ -173,7 +180,7 @@ export const GiftFilter = () => {
 
         <Button 
           type="submit"
-          className="w-full bg-gradient-to-r from-primary to-blue-500 text-white font-medium py-6 text-lg hover:shadow-lg transform transition hover:-translate-y-0.5"
+          className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-medium py-6 text-lg hover:shadow-lg transform transition hover:-translate-y-0.5"
         >
           마음까지 전하는 선물 추천받기
         </Button>
