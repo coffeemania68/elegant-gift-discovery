@@ -61,7 +61,7 @@ export const GiftFilter = () => {
     loop
     playsInline
     className="absolute inset-0 w-full h-full object-cover"
-    src="/video/your-video.mp4"
+    src="/video/winter.mp4"
   />
 </div>
 
