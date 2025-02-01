@@ -60,9 +60,9 @@ export const GiftFilter = () => {
             예산을 선택하세요
           </label>
           <Select value={filters.price} onValueChange={(value) => handleFilterChange(value, "price")}>
-            <SelectTrigger className="w-full h-16 text-lg bg-white pointer-events-none">
-              <SelectValue placeholder="선택해주세요" />
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-auto">
+            <SelectTrigger className="w-full h-16 text-lg bg-white">
+              <SelectValue placeholder="선택해주세요" className="pointer-events-none" />
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 p-2 cursor-pointer">
                 <ChevronDown className="h-5 w-5" />
               </div>
             </SelectTrigger>
@@ -85,9 +85,9 @@ export const GiftFilter = () => {
             카테고리
           </label>
           <Select value={filters.category} onValueChange={(value) => handleFilterChange(value, "category")}>
-            <SelectTrigger className="w-full h-16 text-lg bg-white pointer-events-none">
-              <SelectValue placeholder="선택해주세요" />
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-auto">
+            <SelectTrigger className="w-full h-16 text-lg bg-white">
+              <SelectValue placeholder="선택해주세요" className="pointer-events-none" />
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 p-2 cursor-pointer">
                 <ChevronDown className="h-5 w-5" />
               </div>
             </SelectTrigger>
