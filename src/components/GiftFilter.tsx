@@ -53,6 +53,7 @@ export const GiftFilter = () => {
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value="all">전체 예산</SelectItem>
               <SelectItem value="1m">1만원대</SelectItem>
               <SelectItem value="3m">3만원대</SelectItem>
               <SelectItem value="5m">5만원대</SelectItem>
@@ -93,6 +94,7 @@ export const GiftFilter = () => {
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value="all">전체</SelectItem>
               <SelectItem value="m">남성</SelectItem>
               <SelectItem value="f">여성</SelectItem>
             </SelectContent>
@@ -109,6 +111,7 @@ export const GiftFilter = () => {
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value="all">전체 연령대</SelectItem>
               <SelectItem value="b">영아 (0-3세)</SelectItem>
               <SelectItem value="k">아동 (4-13세)</SelectItem>
               <SelectItem value="t">청소년 (14-19세)</SelectItem>
@@ -129,6 +132,7 @@ export const GiftFilter = () => {
               <SelectValue placeholder="선택해주세요" />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value="all">전체 관계</SelectItem>
               <SelectItem value="f">가족</SelectItem>
               <SelectItem value="s">연인</SelectItem>
               <SelectItem value="r">친구</SelectItem>
@@ -165,7 +169,6 @@ export const GiftFilter = () => {
           나에게 딱 맞는 선물 찾기
         </Button>
       </form>
-      
     </div>
   );
 };
