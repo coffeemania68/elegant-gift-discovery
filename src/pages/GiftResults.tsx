@@ -41,6 +41,29 @@ export default function GiftResults() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+       <div className="mt-3" style={{
+        background: "linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,255,0.7))",
+        border: "1px solid rgba(0,0,0,0.05)",
+        borderRadius: "10px",
+        padding: "15px",
+        marginBottom: "20px",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.05)",
+        textAlign: "center",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        <p style={{
+          color: "#4a4a4a",
+          fontSize: "14px",
+          lineHeight: "1.6",
+          margin: "0"
+        }}>
+          🤝 이 포스팅은 <span style={{color: "#1e88e5", fontWeight: "bold"}}>쿠팡 파트너스 활동</span>의 일환으로, 
+          이에 따른 일정액의 <span style={{color: "#4caf50", fontWeight: "bold"}}>수수료를 제공받습니다</span>.
+        </p>
+      </div>
+      
       <div className="flex justify-between items-center mb-8">
         <Link to="/">
           <Button variant="outline">
