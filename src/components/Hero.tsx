@@ -1,11 +1,11 @@
 export const Hero = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="py-4 text-center">
-        <h1 className="text-3xl font-bold mb-2 gradient-text">
+      <div className="py-2 text-center">
+        <h1 className="text-2xl font-bold mb-1 gradient-text">
           GIFT FINDER
         </h1>
-        <p className="text-lg text-gray-700">
+        <p className="text-sm text-gray-700">
           AI가 추천하는 특별한 선물로 소중한 마음을 전하세요
         </p>
       </div>
