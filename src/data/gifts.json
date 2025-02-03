@@ -181,6 +181,18 @@
       "seasons": ["all"]
     },
     {
+      "id": "fashion_health_hobby_10m_07",
+      "imageUrl": "https://blog.kakaocdn.net/dn/dpPF3R/btsL5jl5F4F/gbcauIvfhMs4RnxkHVLOD0/img.png",
+      "productUrl": "https://link.coupang.com/a/ccUZLt",
+      "name": " 리복 나노 X5 - 화이트:블루 / 100229223 RESO5ET1UB2",
+      "categories": ["fashion", "health", "hobby"],
+      "priceRange": "10m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
       "id": "health_20m_02",
       "imageUrl": "https://blog.kakaocdn.net/dn/ezvNUO/btsL5CeDVsx/yWc4zR7NJXANGscWAwMpbK/img.png",
       "productUrl": "https://link.coupang.com/a/ccisSR",
