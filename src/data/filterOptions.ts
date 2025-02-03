@@ -14,7 +14,11 @@ export const categoryOptions = [
   { value: "digital", label: "디지털/가전" },
   { value: "health", label: "건강/운동" },
   { value: "pet", label: "반려동물" },
-  { value: "fashion", label: "패션/잡화" }
+  { value: "fashion", label: "패션/잡화" },
+  { value: "hobby", label: "취미/레저" },
+  { value: "living", label: "생활/주방" },
+  { value: "beauty", label: "뷰티" },
+  { value: "baby", label: "유아동" }
 ];
 
 export const genderOptions = [
