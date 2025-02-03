@@ -1,0 +1,64 @@
+{
+  "gifts": [
+    {
+      "id": "digital_living_10m_05",
+      "imageUrl": "/images/products/products/digital_living_10m_05.jpg",
+      "productUrl": "https://link.coupang.com/a/ccibG1",
+      "name": "일리 프란시스 커피머신 화이트",
+      "categories": ["digital"],
+      "priceRange": "10m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["f", "s", "r"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "digital_hobby_20m_02",
+      "imageUrl": "/images/products/products/digital_hobby_20m_02.jpg",
+      "productUrl": "https://link.coupang.com/a/ccigqx",
+      "name": "Apple Beats Pill Wireless 블루투스 스피커",
+      "categories": ["digital"],
+      "priceRange": "20m",
+      "gender": "all",
+      "ageGroups": ["t", "y", "d"],
+      "relations": ["f", "s", "r"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "digital_under50_03",
+      "imageUrl": "/images/products/products/digital_under50_03.jpg",
+      "productUrl": "https://link.coupang.com/a/cch9Bp",
+      "name": "Apple 정품 2022 아이패드 10세대",
+      "categories": ["digital"],
+      "priceRange": "under50",
+      "gender": "all",
+      "ageGroups": ["t", "y", "d", "s"],
+      "relations": ["f", "s", "r"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "digital_over50_01",
+      "imageUrl": "/images/products/products/digital_over50_01.jpg",
+      "productUrl": "https://link.coupang.com/a/ccUhVb",
+      "name": "Galaxy S24 Series",
+      "categories": ["digital"],
+      "priceRange": "over50",
+      "gender": "all",
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "digital_over50_02",
+      "imageUrl": "/images/products/products/digital_over50_02.jpg",
+      "productUrl": "https://link.coupang.com/a/cch8ub",
+      "name": "Apple 정품 2024 아이패드 프로 13 M4칩",
+      "categories": ["digital"],
+      "priceRange": "over50",
+      "gender": "all",
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    }
+  ]
+}

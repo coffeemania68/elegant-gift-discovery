@@ -1,0 +1,52 @@
+{
+  "gifts": [
+    {
+      "id": "health_1m_04",
+      "imageUrl": "/images/products/products/health_1m_04.jpg",
+      "productUrl": "https://link.coupang.com/a/ccit0N",
+      "name": "종근당건강 프로폴리스 플러스",
+      "categories": ["health"],
+      "priceRange": "1m",
+      "gender": "all",
+      "ageGroups": ["d", "s"],
+      "relations": ["f", "t"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "health_5m_05",
+      "imageUrl": "/images/products/products/health_5m_05.jpg",
+      "productUrl": "https://link.coupang.com/a/ccimlU",
+      "name": "종근당 황제 침향단 + 쇼핑백",
+      "categories": ["health"],
+      "priceRange": "5m",
+      "gender": "all",
+      "ageGroups": ["d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "health_10m_01",
+      "imageUrl": "/images/products/products/health_10m_01.jpg",
+      "productUrl": "https://link.coupang.com/a/cciog5",
+      "name": "닥터웰 에어라이너 공기압 마사지기 HDW-5000",
+      "categories": ["health"],
+      "priceRange": "10m",
+      "gender": "all",
+      "ageGroups": ["d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "health_20m_02",
+      "imageUrl": "https://blog.kakaocdn.net/dn/ezvNUO/btsL5CeDVsx/yWc4zR7NJXANGscWAwMpbK/img.png",
+      "productUrl": "https://link.coupang.com/a/ccisSR",
+      "name": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
+      "categories": ["health"],
+      "priceRange": "20m",
+      "gender": "all",
+      "ageGroups": ["k", "t", "y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    }
+  ]
+}

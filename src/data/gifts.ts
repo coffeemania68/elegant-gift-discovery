@@ -1,7 +1,16 @@
-import giftsData from './gifts.json';
+import digitalGifts from './categories/digital.json';
+import healthGifts from './categories/health.json';
+import petGifts from './categories/pet.json';
+import fashionGifts from './categories/fashion.json';
 import { Gift } from "@/types/gift";
 
-export const gifts: Gift[] = giftsData.gifts.map(gift => ({
+// 모든 카테고리의 선물을 하나의 배열로 결합
+export const gifts: Gift[] = [
+  ...digitalGifts.gifts,
+  ...healthGifts.gifts,
+  ...petGifts.gifts,
+  ...fashionGifts.gifts
+].map(gift => ({
   ...gift,
   categories: gift.categories as Gift['categories'],
   priceRange: gift.priceRange as Gift['priceRange'],
