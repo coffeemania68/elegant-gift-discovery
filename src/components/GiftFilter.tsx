@@ -44,11 +44,20 @@ export const GiftFilter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/gift-results", { 
-      state: { 
-        filters: filters 
-      } 
-    });
+    if (specialEvent && specialEvent !== "none") {
+      navigate("/special-event-results", { 
+        state: { 
+          filters: filters,
+          specialEvent: specialEvent
+        } 
+      });
+    } else {
+      navigate("/gift-results", { 
+        state: { 
+          filters: filters 
+        } 
+      });
+    }
   };
   const [specialEvent, setSpecialEvent] = useState("none"); // 새로운 상태 추가
   
