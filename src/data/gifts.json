@@ -179,6 +179,90 @@
       "ageGroups": ["d", "s"],
       "relations": ["all"],
       "seasons": ["all"]
+    },
+    {
+      "id": "fashion_health_hobby_5m_05",
+      "imageUrl": "/images/products/products/fashion_health_hobby_5m_05.jpg",
+      "productUrl": "https://link.coupang.com/a/ccTsjA",
+      "name": "브룩스 고스트 16 미디움 운동화 1204071B151",
+      "categories": ["fashion", "health"],
+      "priceRange": "5m",
+      "gender": "all",
+      "ageGroups": ["d", "s", "all"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "fashion_health_hobby_5m_06",
+      "imageUrl": "/images/products/products/fashion_health_hobby_5m_05.jpg",
+      "productUrl": "https://link.coupang.com/a/ccUKL9",
+      "name": "아디다스 런닝화 듀라모 RC W 남녀 공용 운동화",
+      "categories": ["fashion", "health"],
+      "priceRange": "5m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "living_5m_05",
+      "imageUrl": "/images/products/products/living_5m_05.jpg",
+      "productUrl": "https://link.coupang.com/a/cciMr2",
+      "name": "셀리티 아이웨어 머그",
+      "categories": ["living"],
+      "priceRange": "5m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "fashion_beauty_10m_01",
+      "imageUrl": "/images/products/products/fashion_beauty_10m_01.jpg",
+      "productUrl": "https://link.coupang.com/a/cciG91",
+      "name": "조 말론 런던 블랙베리 앤 베이 코롱",
+      "categories": ["fashion", "beauty"],
+      "priceRange": "10m",
+      "gender": "f",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "living_baby_10m_02",
+      "imageUrl": "/images/products/products/Living_baby_10m_02.jpg",
+      "productUrl": "https://link.coupang.com/a/cciStU",
+      "name": "무아스 풀문 백라이트 무드등 LED 벽시계",
+      "categories": ["living", "baby"],
+      "priceRange": "10m",
+      "gender": "f",
+      "ageGroups": ["k", "t", "y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "fashion_under50_01",
+      "imageUrl": "/images/products/products/fashion_under50_01.jpg",
+      "productUrl": "https://link.coupang.com/a/cciO9P",
+      "name": "절대 실패없는 에르메스 트윌리",
+      "categories": ["fashion"],
+      "priceRange": "under50",
+      "gender": "f",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "fashion_over50_01",
+      "imageUrl": "/images/products/products/fashion_over50_01.jpg",
+      "productUrl": "https://link.coupang.com/a/cciVqM",
+      "name": "티파니 Co 목걸이 리본 펜던트 미니 타운톡 실버 폴리쉬 크로스 세트",
+      "categories": ["fashion"],
+      "priceRange": "over50",
+      "gender": "f",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["f", "s", "r"],
+      "seasons": ["all"]
     }
   ]
 }
