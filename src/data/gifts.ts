@@ -1,10 +1,9 @@
 import giftsData from './gifts.json';
 import { Gift } from "@/types/gift";
 
-// Type assertion to ensure the imported data matches our Gift type
 export const gifts: Gift[] = giftsData.gifts.map(gift => ({
   ...gift,
-  category: gift.category as Gift['category'],
+  categories: gift.categories as Gift['categories'],
   priceRange: gift.priceRange as Gift['priceRange'],
   gender: gift.gender as Gift['gender'],
   ageGroups: gift.ageGroups as Gift['ageGroups'],
@@ -37,9 +36,9 @@ export const filterGifts = (filters: {
       return false;
     }
     
-    // 카테고리 필터
+    // 카테고리 필터 - 여러 카테고리 지원
     if (filters.category && filters.category !== 'all' && 
-        gift.category !== filters.category) {
+        !gift.categories.includes(filters.category as any)) {
       return false;
     }
     

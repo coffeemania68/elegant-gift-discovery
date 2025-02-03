@@ -10,7 +10,7 @@ export interface Gift {
   imageUrl: string;
   productUrl: string;
   name: string;
-  category: Category;
+  categories: Category[];  // 변경: category -> categories (배열)
   priceRange: PriceRange;
   gender: Gender;
   ageGroups: AgeGroup[];
