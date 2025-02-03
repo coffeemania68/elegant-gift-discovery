@@ -1,11 +1,11 @@
 {
   "gifts": [
     {
-      "id": "digital_health_10m_01",
-      "imageUrl": "/images/products/digital_health_10m_01.jpg",
+      "id": "digital_living_10m_05",
+      "imageUrl": "/images/products/products/digital_living_10m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccibG1",
       "name": "일리 프란시스 커피머신 화이트",
-      "categories": ["digital", "health"],
+      "categories": ["digital"],
       "priceRange": "10m",
       "gender": "all",
       "ageGroups": ["y", "d", "s"],
@@ -13,8 +13,8 @@
       "seasons": ["all"]
     },
     {
-      "id": "digital_20m_02",
-      "imageUrl": "/images/products/digital_20m_02.jpg",
+      "id": "digital_hobby_20m_02",
+      "imageUrl": "/images/products/products/digital_hobby_20m_02.jpg",
       "productUrl": "https://link.coupang.com/a/ccigqx",
       "name": "Apple Beats Pill Wireless 블루투스 스피커",
       "categories": ["digital"],
@@ -26,7 +26,7 @@
     },
     {
       "id": "digital_under50_03",
-      "imageUrl": "/images/products/digital_under50_03.jpg",
+      "imageUrl": "/images/products/products/digital_under50_03.jpg",
       "productUrl": "https://link.coupang.com/a/cch9Bp",
       "name": "Apple 정품 2022 아이패드 10세대",
       "categories": ["digital"],
@@ -38,147 +38,147 @@
     },
     {
       "id": "digital_over50_01",
-      "imageUrl": "/images/products/digital_over50_01.jpg",
-      "productUrl": "https://link.coupang.com/a/cch4Hb",
-      "name": "Galaxy S25 Series",
+      "imageUrl": "/images/products/products/digital_over50_01.jpg",
+      "productUrl": "https://link.coupang.com/a/ccUhVb",
+      "name": "Galaxy S24 Series",
       "categories": ["digital"],
       "priceRange": "over50",
-      "gender": "a",
-      "ageGroups": ["a", "a", "a"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "gender": "all",
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "digital_over50_02",
-      "imageUrl": "/images/products/digital_over50_02.jpg",
+      "imageUrl": "/images/products/products/digital_over50_02.jpg",
       "productUrl": "https://link.coupang.com/a/cch8ub",
       "name": "Apple 정품 2024 아이패드 프로 13 M4칩",
       "categories": ["digital"],
       "priceRange": "over50",
-      "gender": "a",
-      "ageGroups": ["a", "a", "a"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "gender": "all",
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "health_1m_04",
-      "imageUrl": "/images/products/health_1m_04.jpg",
+      "imageUrl": "/images/products/products/health_1m_04.jpg",
       "productUrl": "https://link.coupang.com/a/ccit0N",
       "name": "종근당건강 프로폴리스 플러스",
       "categories": ["health"],
       "priceRange": "1m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["d", "s"],
       "relations": ["f", "t"],
-      "seasons": ["a"]
+      "seasons": ["all"]
     },
     {
       "id": "health_5m_05",
-      "imageUrl": "/images/products/health_5m_05.jpg",
+      "imageUrl": "/images/products/products/health_5m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccimlU",
-      "name": "종근당 황제 침향단 + 쇼핑백, 112.5g, 2개",
+      "name": "종근당 황제 침향단 + 쇼핑백",
       "categories": ["health"],
       "priceRange": "5m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "health_10m_01",
-      "imageUrl": "/images/products/health_10m_01.jpg",
+      "imageUrl": "/images/products/products/health_10m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cciog5",
       "name": "닥터웰 에어라이너 공기압 마사지기 HDW-5000",
       "categories": ["health"],
       "priceRange": "10m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "health_20m_02",
-      "imageUrl": "/images/products/health_20m_02.jpg",
+      "imageUrl": "/images/products/products/health_20m_02.jpg",
       "productUrl": "https://link.coupang.com/a/ccisSR",
       "name": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
       "categories": ["health"],
       "priceRange": "20m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["k", "t", "y", "d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "health_20m_03",
-      "imageUrl": "/images/products/health_20m_03.jpg",
+      "imageUrl": "/images/products/products/health_20m_03.jpg",
       "productUrl": "https://link.coupang.com/a/ccip17",
       "name": "컬럼비아 Hike to Hike 등산 배낭 25L + 방수커버",
       "categories": ["health"],
       "priceRange": "20m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["y", "d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "pet_1m_01",
-      "imageUrl": "/images/products/pet_1m_01.jpg",
+      "imageUrl": "/images/products/products/pet_1m_01.jpg",
       "productUrl": "https://link.coupang.com/a/ccixFb",
       "name": "도그아이 반려동물 타이디 테이블 식기 2구, 딥그린, 1세트",
       "categories": ["pet"],
       "priceRange": "1m",
-      "gender": "a",
+      "gender": "all",
       "ageGroups": ["k", "t", "y", "d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "pet_1m_04",
-      "imageUrl": "/images/products/pet_1m_04.jpg",
+      "imageUrl": "/images/products/products/pet_1m_04.jpg",
       "productUrl": "https://link.coupang.com/a/cciA0V",
       "name": "강아지 고양이 물고기 매트 장난감",
       "categories": ["pet"],
       "priceRange": "1m",
       "gender": "f",
-      "ageGroups": ["a"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "pet_1m_05",
-      "imageUrl": "/images/products/pet_1m_05.jpg",
+      "imageUrl": "/images/products/products/pet_1m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccizdW",
       "name": "반려견 파자마",
       "categories": ["pet"],
       "priceRange": "1m",
       "gender": "f",
       "ageGroups": ["t", "y", "d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "pet_3m_01",
-      "imageUrl": "/images/products/pet_3m_01.jpg",
+      "imageUrl": "/images/products/products/pet_3m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cciCIC",
       "name": "반려견 아이스 쿨링 방석",
       "categories": ["pet"],
       "priceRange": "3m",
       "gender": "f",
-      "ageGroups": ["a"],
-      "relations": ["a"],
-      "seasons": ["u"]
+      "ageGroups": ["all"],
+      "relations": ["all"],
+      "seasons": ["all"]
     },
     {
       "id": "pet_10m_03",
-      "imageUrl": "/images/products/pet_10m_03.jpg",
+      "imageUrl": "/images/products/products/pet_10m_03.jpg",
       "productUrl": "https://link.coupang.com/a/ccivWD",
       "name": "펫츠놀로지 분리형 프리미엄 반려동물 유모차",
       "categories": ["pet"],
       "priceRange": "10m",
       "gender": "f",
       "ageGroups": ["d", "s"],
-      "relations": ["a"],
-      "seasons": ["a"]
+      "relations": ["all"],
+      "seasons": ["all"]
     }
   ]
 }
