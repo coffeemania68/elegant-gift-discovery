@@ -97,30 +97,6 @@
       "seasons": ["all"]
     },
     {
-      "id": "health_20m_02",
-      "imageUrl": "/images/products/health_20m_02.jpg",
-      "productUrl": "https://link.coupang.com/a/ccisSR",
-      "name": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
-      "categories": ["health"],
-      "priceRange": "20m",
-      "gender": "all",
-      "ageGroups": ["k", "t", "y", "d", "s"],
-      "relations": ["all"],
-      "seasons": ["all"]
-    },
-    {
-      "id": "health_20m_03",
-      "imageUrl": "/images/products/health_20m_03.jpg",
-      "productUrl": "https://link.coupang.com/a/ccip17",
-      "name": "컬럼비아 Hike to Hike 등산 배낭 25L + 방수커버",
-      "categories": ["health"],
-      "priceRange": "20m",
-      "gender": "all",
-      "ageGroups": ["y", "d", "s"],
-      "relations": ["all"],
-      "seasons": ["all"]
-    },
-    {
       "id": "pet_1m_01",
       "imageUrl": "/images/products/products/pet_1m_01.jpg",
       "productUrl": "https://link.coupang.com/a/ccixFb",
@@ -182,7 +158,7 @@
     },
     {
       "id": "fashion_health_hobby_5m_05",
-      "imageUrl": "/images/products/products/fashion_health_hobby_5m_05.jpg",
+      "imageUrl": "https://blog.kakaocdn.net/dn/sK86f/btsL4Qj8Y5J/Gw7CQk3uR5mecKdQhDLhF0/img.png",
       "productUrl": "https://link.coupang.com/a/ccTsjA",
       "name": "브룩스 고스트 16 미디움 운동화 1204071B151",
       "categories": ["fashion", "health"],
@@ -194,11 +170,35 @@
     },
     {
       "id": "fashion_health_hobby_5m_06",
-      "imageUrl": "/images/products/products/fashion_health_hobby_5m_05.jpg",
+      "imageUrl": "https://blog.kakaocdn.net/dn/bTc6gN/btsL4LXBSSi/PkqIluKYaS0CJygCWJVMAk/img.png",
       "productUrl": "https://link.coupang.com/a/ccUKL9",
       "name": "아디다스 런닝화 듀라모 RC W 남녀 공용 운동화",
       "categories": ["fashion", "health"],
       "priceRange": "5m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "health_20m_02",
+      "imageUrl": "https://blog.kakaocdn.net/dn/ezvNUO/btsL5CeDVsx/yWc4zR7NJXANGscWAwMpbK/img.png",
+      "productUrl": "https://link.coupang.com/a/ccisSR",
+      "name": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
+      "categories": ["health"],
+      "priceRange": "20m",
+      "gender": "all",
+      "ageGroups": ["k", "t", "y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "health_20m_03",
+      "imageUrl": "https://blog.kakaocdn.net/dn/bIYUy5/btsL5j7rIpO/Sw1AEdxGGXqwF16K7zqt31/img.png",
+      "productUrl": "https://link.coupang.com/a/ccip17",
+      "name": "컬럼비아 Hike to Hike 등산 배낭 25L + 방수커버",
+      "categories": ["health"],
+      "priceRange": "20m",
       "gender": "all",
       "ageGroups": ["y", "d", "s"],
       "relations": ["all"],
