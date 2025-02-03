@@ -1,12 +1,15 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Gift } from "@/types/gift";
 import { ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 interface GiftResultsProps {
   gifts: Gift[];
 }
 
 export const GiftResults = ({ gifts }: GiftResultsProps) => {
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+
   if (gifts.length === 0) {
     return (
       <div className="text-center py-8">
@@ -15,17 +18,29 @@ export const GiftResults = ({ gifts }: GiftResultsProps) => {
     );
   }
 
+  const handleImageError = (giftId: string) => {
+    setImageErrors(prev => ({ ...prev, [giftId]: true }));
+    console.error(`Image failed to load for gift: ${giftId}`);
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {gifts.map((gift) => (
         <Card key={gift.id} className="overflow-hidden hover:shadow-lg transition-shadow">
           <a href={gift.productUrl} target="_blank" rel="noopener noreferrer">
             <div className="aspect-video relative overflow-hidden">
-              <img
-                src={gift.imageUrl}
-                alt={gift.name}
-                className="object-cover w-full h-full hover:scale-105 transition-transform"
-              />
+              {imageErrors[gift.id] ? (
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <p className="text-gray-500">이미지를 불러올 수 없습니다</p>
+                </div>
+              ) : (
+                <img
+                  src={gift.imageUrl}
+                  alt={gift.name}
+                  className="object-cover w-full h-full hover:scale-105 transition-transform"
+                  onError={() => handleImageError(gift.id)}
+                />
+              )}
             </div>
             <CardHeader>
               <CardTitle className="text-lg line-clamp-2">{gift.name}</CardTitle>
