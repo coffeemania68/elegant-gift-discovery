@@ -53,7 +53,7 @@ export default function SpecialEventResults() {
           lineHeight: "1.6",
           margin: "0"
         }}>
-          🤝 이 포스팅은 <span style={{color: "#1e88e5", fontWeight: "bold"}}>쿠팡 파트너스 활동</span>의 일환으로, 
+          🤝 이 포스팅은 <span style={{color: "#1e88e5", fontWeight: "bold"}}>쿠팡 파트너스와 컬리 쿠페이터 활동</span>의 일환으로 <br>
           이에 따른 일정액의 <span style={{color: "#4caf50", fontWeight: "bold"}}>수수료를 제공받습니다</span>.
         </p>
       </div>
