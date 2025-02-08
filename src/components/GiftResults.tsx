@@ -52,7 +52,7 @@ export const GiftResults = ({ gifts }: GiftResultsProps) => {
             <CardHeader>
               <CardTitle className="text-lg line-clamp-2">{gift.name}</CardTitle>
               <CardDescription className="flex items-center gap-1">
-                안심 당일배송 쿠팡 바로가기 <ExternalLink className="w-4 h-4" />
+                상품 솔직 후기 보러가기 <ExternalLink className="w-4 h-4" />
               </CardDescription>
             </CardHeader>
           </a>
