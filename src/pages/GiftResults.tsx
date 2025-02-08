@@ -45,7 +45,7 @@ export default function GiftResults() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="mt-3" style={{
+      <div className="mt-1" style={{
         background: "linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,255,0.7))",
         border: "1px solid rgba(0,0,0,0.05)",
         borderRadius: "10px",
@@ -63,8 +63,7 @@ export default function GiftResults() {
           lineHeight: "1.6",
           margin: "0"
         }}>
-          🤝 이 포스팅은 <span style={{color: "#1e88e5", fontWeight: "bold"}}>쿠팡 파트너스 활동</span>의 일환으로, 
-          이에 따른 일정액의 <span style={{color: "#4caf50", fontWeight: "bold"}}>수수료를 제공받습니다</span>.
+          🤝 이 포스팅은 <span style={{color: "#1e88e5", fontWeight: "bold"}}>쿠팡 파트너스 활동</span>의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
         </p>
       </div>
       
