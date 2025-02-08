@@ -3,7 +3,7 @@
   "gifts": [
     {
       "id": "living_2m_03",
-      "imageUrl": "/images/products/products/living_2m_03.jpg",
+      "imageUrl": "/images/products/living_2m_03.jpg",
       "productUrl": "https://link.coupang.com/a/cdH9NI",
       "name": "에스티 도자기 그릇",
       "categories": ["living"],
@@ -14,8 +14,8 @@
       "seasons": ["all"]
     },
     {
-      "id": "beauty_living_fashiom_1m_05",
-      "imageUrl": "/images/products/products/beauty_living_fashion_1m_05.jpg",
+      "id": "beauty_living_fashion_1m_05",
+      "imageUrl": "/images/products/beauty_living_fashion_1m_05.jpg",
       "productUrl": "https://link.coupang.com/a/cdIpUO",
       "name": "드롭셋 다운펌 기계",
       "categories": ["beauty", "living", "fashion"],

@@ -3,7 +3,7 @@
   "gifts": [
     {
       "id": "fashion_beauty_12m_03",
-      "imageUrl": "/images/products/products/fashion_beauty_12m_03.jpg",
+      "imageUrl": "/images/products/fashion_beauty_12m_03.jpg",
       "productUrl": "https://link.coupang.com/a/cdIq6E",
       "name": "러쉬 솔리드 퍼퓸",
       "categories": ["fashion", "beauty"],
@@ -15,7 +15,7 @@
     },
     {
       "id": "fashion_beauty_2m_01",
-      "imageUrl": "/images/products/products/fashion_beauty_2m_01.jpg",
+      "imageUrl": "/images/products/fashion_beauty_2m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cdIu7R",
       "name": "ck올인원 모이스처라이저",
       "categories": ["fashion", "beauty"],
@@ -27,7 +27,7 @@
     },
     {
       "id": "fashion_beauty_4m_03",
-      "imageUrl": "/images/products/products/fashion_beauty_4m_03.jpg",
+      "imageUrl": "/images/products/fashion_beauty_4m_03.jpg",
       "productUrl": "https://link.coupang.com/a/cdIAOa",
       "name": "존바바토스 빈티지 EDT 75ml",
       "categories": ["fashion", "beauty"],

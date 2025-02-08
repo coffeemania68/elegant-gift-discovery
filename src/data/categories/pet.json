@@ -1,8 +1,9 @@
+
 {
   "gifts": [
     {
       "id": "pet_1m_01",
-      "imageUrl": "/images/products/products/pet_1m_01.jpg",
+      "imageUrl": "/images/products/pet_1m_01.jpg",
       "productUrl": "https://link.coupang.com/a/ccixFb",
       "name": "도그아이 반려동물 타이디 테이블 식기 2구, 딥그린, 1세트",
       "categories": ["pet"],
@@ -14,7 +15,7 @@
     },
     {
       "id": "pet_1m_04",
-      "imageUrl": "/images/products/products/pet_1m_04.jpg",
+      "imageUrl": "/images/products/pet_1m_04.jpg",
       "productUrl": "https://link.coupang.com/a/cciA0V",
       "name": "강아지 고양이 물고기 매트 장난감",
       "categories": ["pet"],
@@ -26,7 +27,7 @@
     },
     {
       "id": "pet_3m_01",
-      "imageUrl": "/images/products/products/pet_3m_01.jpg",
+      "imageUrl": "/images/products/pet_3m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cciCIC",
       "name": "반려견 아이스 쿨링 방석",
       "categories": ["pet"],
@@ -38,7 +39,7 @@
     },
     {
       "id": "pet_10m_03",
-      "imageUrl": "/images/products/products/pet_10m_03.jpg",
+      "imageUrl": "/images/products/pet_10m_03.jpg",
       "productUrl": "https://link.coupang.com/a/ccivWD",
       "name": "펫츠놀로지 분리형 프리미엄 반려동물 유모차",
       "categories": ["pet"],

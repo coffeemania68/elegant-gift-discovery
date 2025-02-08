@@ -15,7 +15,7 @@
     },
     {
       "id": "health_1m_04",
-      "imageUrl": "/images/products/products/health_1m_04.jpg",
+      "imageUrl": "/images/products/health_1m_04.jpg",
       "productUrl": "https://link.coupang.com/a/ccit0N",
       "name": "종근당건강 프로폴리스 플러스",
       "categories": ["health"],
@@ -27,7 +27,7 @@
     },
     {
       "id": "health_5m_05",
-      "imageUrl": "/images/products/products/health_5m_05.jpg",
+      "imageUrl": "/images/products/health_5m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccimlU",
       "name": "종근당 황제 침향단 + 쇼핑백",
       "categories": ["health"],
@@ -39,7 +39,7 @@
     },
     {
       "id": "health_10m_01",
-      "imageUrl": "/images/products/products/health_10m_01.jpg",
+      "imageUrl": "/images/products/health_10m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cciog5",
       "name": "닥터웰 에어라이너 공기압 마사지기 HDW-5000",
       "categories": ["health"],
@@ -51,7 +51,7 @@
     },
     {
       "id": "health_20m_02",
-      "imageUrl": "https://blog.kakaocdn.net/dn/ezvNUO/btsL5CeDVsx/yWc4zR7NJXANGscWAwMpbK/img.png",
+      "imageUrl": "/images/products/health_20m_02.jpg",
       "productUrl": "https://link.coupang.com/a/ccisSR",
       "name": "제로 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
       "categories": ["health"],
