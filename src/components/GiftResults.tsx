@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Gift } from "@/types/gift";
 import { ExternalLink } from "lucide-react";
@@ -23,17 +24,8 @@ export const GiftResults = ({ gifts }: GiftResultsProps) => {
     console.error(`Image failed to load for gift: ${giftId}`);
   };
 
-  const getFallbackImage = (category: string) => {
-    const fallbackImages: Record<string, string> = {
-      digital: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      health: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b",
-      pet: "https://images.unsplash.com/photo-1583511655826-05700d52f4d9",
-      fashion: "https://images.unsplash.com/photo-1445205170230-053b83016050",
-      living: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-      default: "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-    };
-
-    return fallbackImages[category] || fallbackImages.default;
+  const getFallbackImage = () => {
+    return "/placeholder.svg";
   };
 
   return (
@@ -44,7 +36,7 @@ export const GiftResults = ({ gifts }: GiftResultsProps) => {
             <div className="aspect-video relative overflow-hidden">
               {imageErrors[gift.id] ? (
                 <img
-                  src={getFallbackImage(gift.categories[0])}
+                  src={getFallbackImage()}
                   alt={gift.name}
                   className="object-cover w-full h-full hover:scale-105 transition-transform"
                 />
