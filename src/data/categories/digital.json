@@ -1,8 +1,9 @@
+
 {
   "gifts": [
     {
       "id": "digital_health_2m_01",
-      "imageUrl": "/images/products/products/digital_health_2m_01.jpg",
+      "imageUrl": "/images/products/digital_health_2m_01.jpg",
       "productUrl": "https://link.coupang.com/a/cdIhK3",
       "name": "필립스 코털 제거기",
       "categories": ["digital", "health"],
@@ -14,7 +15,7 @@
     },
     {
       "id": "digital_4m_02",
-      "imageUrl": "/images/products/products/digital_4m_02.jpg",
+      "imageUrl": "/images/products/digital_4m_02.jpg",
       "productUrl": "https://link.coupang.com/a/cdIxXt",
       "name": "뉴에이커 맥세이프 무선 충전기",
       "categories": ["digital"],
@@ -26,7 +27,7 @@
     },
     {
       "id": "digital_living_10m_05",
-      "imageUrl": "/images/products/products/digital_living_10m_05.jpg",
+      "imageUrl": "/images/products/digital_living_10m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccibG1",
       "name": "일리 프란시스 커피머신 화이트",
       "categories": ["digital"],
@@ -38,7 +39,7 @@
     },
     {
       "id": "digital_hobby_20m_02",
-      "imageUrl": "/images/products/products/digital_hobby_20m_02.jpg",
+      "imageUrl": "/images/products/digital_hobby_20m_02.jpg",
       "productUrl": "https://link.coupang.com/a/ccigqx",
       "name": "Apple Beats Pill Wireless 블루투스 스피커",
       "categories": ["digital"],
@@ -50,7 +51,7 @@
     },
     {
       "id": "digital_under50_03",
-      "imageUrl": "/images/products/products/digital_under50_03.jpg",
+      "imageUrl": "/images/products/digital_under50_03.jpg",
       "productUrl": "https://link.coupang.com/a/cch9Bp",
       "name": "Apple 정품 2022 아이패드 10세대",
       "categories": ["digital"],
@@ -62,7 +63,7 @@
     },
     {
       "id": "digital_over50_01",
-      "imageUrl": "/images/products/products/digital_over50_01.jpg",
+      "imageUrl": "/images/products/digital_over50_01.jpg",
       "productUrl": "https://link.coupang.com/a/ccUhVb",
       "name": "Galaxy S24 Series",
       "categories": ["digital"],
@@ -74,7 +75,7 @@
     },
     {
       "id": "digital_over50_02",
-      "imageUrl": "/images/products/products/digital_over50_02.jpg",
+      "imageUrl": "/images/products/digital_over50_02.jpg",
       "productUrl": "https://link.coupang.com/a/cch8ub",
       "name": "Apple 정품 2024 아이패드 프로 13 M4칩",
       "categories": ["digital"],
