@@ -1,3 +1,4 @@
+
 import digitalGifts from './categories/digital.json';
 import healthGifts from './categories/health.json';
 import petGifts from './categories/pet.json';
@@ -29,53 +30,52 @@ export const filterGifts = (filters: {
   season?: string;
 }): Gift[] => {
   return gifts.filter(gift => {
-    // 모든 필터가 'all'이거나 비어있으면 true 반환
-    if ((!filters.priceRange || filters.priceRange === 'all') && 
-        (!filters.category || filters.category === 'all') && 
-        (!filters.gender || filters.gender === 'all') && 
-        (!filters.age || filters.age === 'all') && 
-        (!filters.relation || filters.relation === 'all') && 
-        (!filters.season || filters.season === 'all')) {
+    // 모든 필터가 비어있거나 'all'인 경우 true 반환
+    const noFiltersApplied = Object.values(filters).every(
+      value => !value || value === 'all'
+    );
+    
+    if (noFiltersApplied) {
       return true;
     }
 
     // 가격 범위 필터
-    if (filters.priceRange && filters.priceRange !== 'all' && 
-        gift.priceRange !== filters.priceRange) {
-      return false;
-    }
+    const priceMatches = !filters.priceRange || 
+                        filters.priceRange === 'all' || 
+                        gift.priceRange === filters.priceRange;
     
     // 카테고리 필터 - 여러 카테고리 지원
-    if (filters.category && filters.category !== 'all' && 
-        !gift.categories.includes(filters.category as any)) {
-      return false;
-    }
+    const categoryMatches = !filters.category || 
+                          filters.category === 'all' || 
+                          gift.categories.includes(filters.category as any);
     
     // 성별 필터
-    if (filters.gender && filters.gender !== 'all' && 
-        gift.gender !== 'all' && gift.gender !== filters.gender) {
-      return false;
-    }
+    const genderMatches = !filters.gender || 
+                         filters.gender === 'all' || 
+                         gift.gender === 'all' || 
+                         gift.gender === filters.gender;
     
     // 연령대 필터
-    if (filters.age && filters.age !== 'all' && 
-        !gift.ageGroups.includes(filters.age as any)) {
-      return false;
-    }
+    const ageMatches = !filters.age || 
+                      filters.age === 'all' || 
+                      gift.ageGroups.includes(filters.age as any);
     
     // 관계 필터
-    if (filters.relation && filters.relation !== 'all' && 
-        !gift.relations.includes(filters.relation as any)) {
-      return false;
-    }
+    const relationMatches = !filters.relation || 
+                          filters.relation === 'all' || 
+                          gift.relations.includes(filters.relation as any);
     
     // 계절 필터
-    if (filters.season && filters.season !== 'all' && 
-        !gift.seasons.includes(filters.season as any) && 
-        !gift.seasons.includes('all')) {
-      return false;
-    }
+    const seasonMatches = !filters.season || 
+                         filters.season === 'all' || 
+                         gift.seasons.includes(filters.season as any) || 
+                         gift.seasons.includes('all');
     
-    return true;
+    return priceMatches && 
+           categoryMatches && 
+           genderMatches && 
+           ageMatches && 
+           relationMatches && 
+           seasonMatches;
   });
 };
