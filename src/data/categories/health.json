@@ -1,6 +1,18 @@
 {
   "gifts": [
     {
+      "id": "health_2m_09",
+      "imageUrl": "/images/products/products/health_2m_09.jpg",
+      "productUrl": "https://link.coupang.com/a/cdIt0D",
+      "name": "오쏘몰 이뮨 멀티 비타민",
+      "categories": ["health"],
+      "priceRange": "2m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
       "id": "health_1m_04",
       "imageUrl": "/images/products/products/health_1m_04.jpg",
       "productUrl": "https://link.coupang.com/a/ccit0N",
@@ -40,7 +52,7 @@
       "id": "health_20m_02",
       "imageUrl": "https://blog.kakaocdn.net/dn/ezvNUO/btsL5CeDVsx/yWc4zR7NJXANGscWAwMpbK/img.png",
       "productUrl": "https://link.coupang.com/a/ccisSR",
-      "name": "제로펏 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
+      "name": "제로 최대 20M 자동리턴 디지털 퍼팅연습 골프 퍼터 퍼팅연습기",
       "categories": ["health"],
       "priceRange": "20m",
       "gender": "all",

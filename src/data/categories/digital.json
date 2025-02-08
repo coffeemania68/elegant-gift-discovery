@@ -1,6 +1,30 @@
 {
   "gifts": [
     {
+      "id": "digital_health_2m_01",
+      "imageUrl": "/images/products/products/digital_health_2m_01.jpg",
+      "productUrl": "https://link.coupang.com/a/cdIhK3",
+      "name": "필립스 코털 제거기",
+      "categories": ["digital", "health"],
+      "priceRange": "2m",
+      "gender": "m",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
+      "id": "digital_4m_02",
+      "imageUrl": "/images/products/products/digital_4m_02.jpg",
+      "productUrl": "https://link.coupang.com/a/cdIxXt",
+      "name": "뉴에이커 맥세이프 무선 충전기",
+      "categories": ["digital"],
+      "priceRange": "4m",
+      "gender": "all",
+      "ageGroups": ["y", "d", "s"],
+      "relations": ["all"],
+      "seasons": ["all"]
+    },
+    {
       "id": "digital_living_10m_05",
       "imageUrl": "/images/products/products/digital_living_10m_05.jpg",
       "productUrl": "https://link.coupang.com/a/ccibG1",

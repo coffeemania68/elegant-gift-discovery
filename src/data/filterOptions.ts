@@ -1,7 +1,9 @@
 export const priceOptions = [
   { value: "all", label: "전체 예산" },
   { value: "1m", label: "1만원대" },
+  { value: "2m", label: "2만원대" },
   { value: "3m", label: "3만원대" },
+  { value: "4m", label: "4만원대" },
   { value: "5m", label: "5만원대" },
   { value: "10m", label: "10만원대" },
   { value: "20m", label: "20만원대" },
