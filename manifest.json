@@ -1,0 +1,21 @@
+{
+  "name": "Gift Finder",
+  "short_name": "Gift Finder",
+  "description": "맞춤형 선물 추천 서비스",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://blog.kakaocdn.net/dn/PU2tk/btsL5tt0lgi/6RLLxL7j5z7BLZy1WcZ38k/img.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blog.kakaocdn.net/dn/PU2tk/btsL5tt0lgi/6RLLxL7j5z7BLZy1WcZ38k/img.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
